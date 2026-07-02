@@ -1,4 +1,6 @@
 import { Product } from "./types";
+import { retatrude } from "/src/assets/images/retatrutide_box_vial_1783031480387.jpg";
+
 
 export const PRODUCTS: Product[] = [
   {
@@ -23,7 +25,7 @@ export const PRODUCTS: Product[] = [
       "Metabolic optimization",
       "Active individuals & athletes"
     ],
-    image: "/src/assets/images/retatrutide_box_vial_1783031480387.jpg",
+    image:{retatrude},
     specs: [
       { label: "Concentration", value: "30 mg" },
       { label: "Vial Size", value: "3 mL" },
