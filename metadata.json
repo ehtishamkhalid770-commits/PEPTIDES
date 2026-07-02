@@ -1,0 +1,6 @@
+{
+  "name": "VSC Peptides",
+  "description": "High-converting product website for VSC Peptides, featuring Retatrutide and other premium research compounds.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
