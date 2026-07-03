@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" width="100%" height="100%">
+  <defs>
+    <!-- Silver/Chrome Gradient for 'V' and 'PEPTIDES' -->
+    <linearGradient id="silver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="25%" stop-color="#E2E8F0" />
+      <stop offset="50%" stop-color="#94A3B8" />
+      <stop offset="75%" stop-color="#64748B" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <!-- Deep Sapphire/Cobalt Gradient for 'S' -->
+    <linearGradient id="cobalt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#93C5FD" />
+      <stop offset="30%" stop-color="#3B82F6" />
+      <stop offset="60%" stop-color="#1D4ED8" />
+      <stop offset="100%" stop-color="#1E3A8A" />
+    </linearGradient>
+
+    <!-- Neon Cyan Gradient for 'C' -->
+    <linearGradient id="cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#67E8F9" />
+      <stop offset="30%" stop-color="#06B6D4" />
+      <stop offset="70%" stop-color="#0891B2" />
+      <stop offset="100%" stop-color="#155E75" />
+    </linearGradient>
+
+    <!-- Glowing effect for nodes -->
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Inner Shadow/Highlight for 3D bevel look -->
+    <filter id="bevel" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- BACKGROUND: Transparent -->
+
+  <!-- GRAPHICS GROUP -->
+  <g transform="translate(45, 10)">
+    <!-- Letter 'V' (Silver Chrome Finish, Sleek Angled Cuts) -->
+    <path
+      d="M 10 35 L 30 35 L 56 95 L 72 35 L 92 35 L 62 115 L 42 115 L 10 35 Z"
+      fill="url(#silver)"
+      filter="url(#bevel)"
+    />
+    <!-- Decorative Highlight inside V -->
+    <path
+      d="M 14 39 L 26 39 L 49 97 L 39 108 L 14 39 Z"
+      fill="#FFFFFF"
+      fill-opacity="0.25"
+    />
+
+    <!-- Letter 'S' (Deep Cobalt Blue Glossy Fluid Curve) -->
+    <path
+      d="M 112 43 C 104 31, 84 30, 75 38 C 65 47, 63 60, 72 67 C 88 78, 114 74, 114 96 C 114 112, 94 118, 78 114 C 67 111, 58 102, 55 93 L 74 88 C 76 95, 83 99, 92 99 C 99 99, 101 93, 97 90 C 88 84, 60 78, 60 61 C 60 43, 81 30, 102 34 C 111 36, 118 42, 121 50 L 112 43 Z"
+      fill="url(#cobalt)"
+      filter="url(#bevel)"
+    />
+
+    <!-- Letter 'C' (Electric Cyan Arch) -->
+    <path
+      d="M 175 45 C 168 35, 155 31, 142 31 C 118 31, 102 50, 102 75 C 102 100, 118 117, 144 117 C 158 117, 171 110, 177 100 L 160 90 C 156 95, 150 98, 143 98 C 132 98, 122 89, 122 75 C 122 60, 131 50, 142 50 C 148 50, 154 53, 158 59 L 175 45 Z"
+      fill="url(#cyan)"
+      filter="url(#bevel)"
+    />
+
+    <!-- MOLECULAR BOND SYSTEM (Floating off C's upper right) -->
+    <g id="molecules" opacity="0.95">
+      <!-- Bonding Lines -->
+      <line x1="175" y1="45" x2="190" y2="28" stroke="#22D3EE" stroke-width="2" />
+      <line x1="190" y1="28" x2="212" y2="28" stroke="#22D3EE" stroke-width="2" />
+      <line x1="190" y1="28" x2="182" y2="12" stroke="#38BDF8" stroke-width="1.5" />
+      <line x1="212" y1="28" x2="222" y2="45" stroke="#22D3EE" stroke-width="2" />
+      <line x1="212" y1="28" x2="222" y2="12" stroke="#38BDF8" stroke-width="1.5" />
+
+      <!-- Node Glows -->
+      <circle cx="190" cy="28" r="12" fill="url(#glow)" />
+      <circle cx="212" cy="28" r="12" fill="url(#glow)" />
+      <circle cx="222" cy="45" r="15" fill="url(#glow)" />
+
+      <!-- Spheres -->
+      <circle cx="190" cy="28" r="5" fill="#22D3EE" stroke="#FFFFFF" stroke-width="0.7" />
+      <circle cx="212" cy="28" r="4.5" fill="#0EA5E9" stroke="#FFFFFF" stroke-width="0.7" />
+      <circle cx="182" cy="12" r="3" fill="#94A3B8" />
+      <circle cx="222" cy="45" r="6.5" fill="#06B6D4" stroke="#FFFFFF" stroke-width="1" />
+      <circle cx="222" cy="12" r="3.5" fill="#38BDF8" />
+    </g>
+
+    <!-- "PEPTIDES" text -->
+    <text
+      x="95"
+      y="148"
+      text-anchor="middle"
+      fill="url(#silver)"
+      font-family="'Space Grotesk', 'Inter', system-ui, sans-serif"
+      font-size="20"
+      font-weight="900"
+      letter-spacing="11"
+      class="uppercase"
+    >PEPTIDES</text>
+  </g>
+</svg>
