@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
 import { ChevronDown, Menu, X, MessageSquare, ShoppingCart } from "lucide-react";
 import { Product } from "../types";
-import Logo from "./assets/images/logo.jpeg";
+import Logo from "@/assets/images/logo.jpeg";
 
 interface HeaderProps {
   products: Product[];
