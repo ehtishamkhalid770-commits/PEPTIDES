@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
 import { ChevronDown, Menu, X, MessageSquare, ShoppingCart } from "lucide-react";
 import { Product } from "../types";
-import Logo from "./assets/images/WhatsApp Image 2026-06-25 at 5.03.46 AM (1).jpeg";
+import Logo from "./assets/images/logo.jpeg";
 
 interface HeaderProps {
   products: Product[];
