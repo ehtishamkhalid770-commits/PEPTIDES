@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
 import { ChevronDown, Menu, X, MessageSquare, ShoppingCart } from "lucide-react";
 import { Product } from "../types";
-import Logo from "./assets/images/logo.jpeg";
+import Logo from "./Logo";
 
 interface HeaderProps {
   products: Product[];
@@ -59,8 +59,8 @@ export default function Header({
           onClick={() => handleScrollTo("hero-section")}
           className="flex items-center gap-3 cursor-pointer group"
         >
-          <img src= {Logo} alt="logo" className="w-8 h-8 rounded-md" />
-            </div>
+          <Logo className="h-10" />
+        </div>
 
         {/* Desktop Navigation */}
         <nav id="desktop-nav" className="hidden md:flex items-center gap-8 font-sans">
