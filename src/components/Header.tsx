@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
 import { ChevronDown, Menu, X, MessageSquare, ShoppingCart } from "lucide-react";
 import { Product } from "../types";
+import Logo from "./Logo";
 
 interface HeaderProps {
   products: Product[];
@@ -58,26 +59,7 @@ export default function Header({
           onClick={() => handleScrollTo("hero-section")}
           className="flex items-center gap-3 cursor-pointer group"
         >
-          <div className="relative w-10 h-10 flex items-center justify-center rounded-lg bg-brand-box border border-brand-cyan/20 group-hover:border-brand-cyan transition-colors">
-            {/* Molecular bond icon SVG */}
-            <svg className="w-6 h-6 text-brand-cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <circle cx="12" cy="6" r="3" fill="currentColor" fillOpacity="0.2" />
-              <circle cx="6" cy="16" r="3" fill="currentColor" fillOpacity="0.2" />
-              <circle cx="18" cy="16" r="3" fill="currentColor" fillOpacity="0.2" />
-              <line x1="12" y1="9" x2="7.5" y2="13.5" />
-              <line x1="12" y1="9" x2="16.5" y2="13.5" />
-              <line x1="9" y1="16" x2="15" y2="16" strokeDasharray="2 2" />
-            </svg>
-            <span className="absolute inset-0 rounded-lg bg-brand-cyan/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm" />
-          </div>
-          <div className="flex flex-col">
-            <span className="text-lg font-display font-black tracking-[0.2em] text-white leading-none">
-              VSC
-            </span>
-            <span className="text-[10px] font-mono tracking-[0.3em] text-brand-cyan text-glow-cyan">
-              PEPTIDES
-            </span>
-          </div>
+          <Logo className="h-10" />
         </div>
 
         {/* Desktop Navigation */}

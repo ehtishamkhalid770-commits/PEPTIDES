@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
+import Logo from "./Logo";
 
 interface PreloaderProps {
   onComplete: () => void;
@@ -124,16 +125,16 @@ export default function Preloader({ onComplete }: PreloaderProps) {
           />
         </div>
 
-        {/* Brand Text */}
-        <motion.h1
+        {/* Brand Logo & Text */}
+        <motion.div
           id="preloader-title"
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-2xl md:text-3xl font-display font-bold tracking-[0.25em] text-white text-center"
+          className="flex justify-center"
         >
-          VSC <span className="text-brand-cyan text-glow-cyan font-light">PEPTIDES</span>
-        </motion.h1>
+          <Logo className="h-16" />
+        </motion.div>
 
         {/* Loading Bar */}
         <div className="w-48 h-1 bg-brand-box rounded-full mt-6 overflow-hidden">
