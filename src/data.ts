@@ -1,6 +1,5 @@
 import { Product } from "./types";
 
-
 export const PRODUCTS: Product[] = [
   {
     id: "retatrutide",
@@ -24,7 +23,7 @@ export const PRODUCTS: Product[] = [
       "Metabolic optimization",
       "Active individuals & athletes"
     ],
-    image:"/src/assets/images/retatrutide_box_vial_1783031480387.jpg",
+    image: "/assets/images/retatrutide_box_vial_1783031480387.jpg",
     specs: [
       { label: "Concentration", value: "30 mg" },
       { label: "Vial Size", value: "3 mL" },
@@ -87,7 +86,7 @@ export const PRODUCTS: Product[] = [
       "Increasing hair follicle density",
       "Reversing skin aging indicators"
     ],
-    image: "/src/assets/images/ghk_cu_vial_1783031498591.jpg",
+    image: "/assets/images/ghk_cu_vial_1783031498591.jpg",
     specs: [
       { label: "Concentration", value: "100 mg" },
       { label: "Vial Size", value: "3 mL" },
@@ -139,7 +138,7 @@ export const PRODUCTS: Product[] = [
       "Preserves peptides safely for up to 28 days",
       "Maintains sterile laboratory conditions"
     ],
-    image: "/src/assets/images/bac_water_vial_1783031517832.jpg",
+    image: "/assets/images/bac_water_vial_1783031517832.jpg",
     specs: [
       { label: "Concentration", value: "0.9% Benzyl Alcohol" },
       { label: "Vial Size", value: "10 mL" },
