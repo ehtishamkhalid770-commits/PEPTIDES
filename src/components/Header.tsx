@@ -59,8 +59,8 @@ export default function Header({
           onClick={() => handleScrollTo("hero-section")}
           className="flex items-center gap-3 cursor-pointer group"
         >
-          <Logo className="h-10" />
-        </div>
+          <img src= {logo} alt="logo" className="w-8 h-8 rounded-md" />
+            </div>
 
         {/* Desktop Navigation */}
         <nav id="desktop-nav" className="hidden md:flex items-center gap-8 font-sans">
